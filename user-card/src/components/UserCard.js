@@ -32,10 +32,10 @@ function UserCard (props) {
             />
             <CardContent>
                 <Typography variant='h4' component='h2'>{props.data.login}</Typography>
-                <Typography variant='h5'>{props.data.name}</Typography>
-                <Typography variant='h5' color='textSecondary'>ID: {props.data.id}</Typography>
-                <Typography variant='h5' color='textSecondary'>Public Repos: {props.data.public_repos}</Typography>
-                <Typography variant='p' color='textSecondary'>Bio: {props.data.bio}</Typography>
+                <Typography variant='h4'>{props.data.name}</Typography>
+                <Typography variant='h5'>ID: {props.data.id}</Typography>
+                <Typography variant='h5'>Public Repos: {props.data.public_repos}</Typography>
+                <Typography variant='p'>Bio: {props.data.bio}</Typography>
                 <a href={props.data.repos_url} className='link'>Repos URL</a>
             </CardContent>
         </Card>
