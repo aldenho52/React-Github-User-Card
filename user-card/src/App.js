@@ -3,6 +3,7 @@ import React from 'react'
 import axios from 'axios'
 
 import UserCard from './components/UserCard'
+import Followers from './components/Followers'
 
 class App extends React.Component {
   state = {
@@ -33,10 +34,10 @@ class App extends React.Component {
   render() {
     return (
       <div className="App">
-        <h1>Github User Card</h1>
+        <h1 className='title'>Github User Card</h1>
         <UserCard data={this.state.data} />
         <div>
-          <h2>Followers</h2>
+          <Followers followers={this.state.followers} />
         </div>
       </div>
     );
